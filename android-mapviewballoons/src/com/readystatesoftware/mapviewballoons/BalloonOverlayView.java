@@ -1,6 +1,6 @@
 /***
  * Copyright (c) 2010 readyState Software Ltd
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
  * a copy of the License at
@@ -10,7 +10,7 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  */
 
 package com.readystatesoftware.mapviewballoons;
@@ -41,7 +41,7 @@ import com.google.android.maps.OverlayItem;
  * <li>layout/balloon_map_overlay.xml</li>
  * </ul>
  * </p>
- * 
+ *
  * @author Jeff Gilfelt
  *
  */
@@ -53,7 +53,7 @@ public class BalloonOverlayView<Item extends OverlayItem> extends FrameLayout {
 
 	/**
 	 * Create a new BalloonOverlayView.
-	 * 
+	 *
 	 * @param context - The activity context.
 	 * @param balloonBottomOffset - The bottom padding (in pixels) to be applied
 	 * when rendering this view.
@@ -84,17 +84,17 @@ public class BalloonOverlayView<Item extends OverlayItem> extends FrameLayout {
 		params.gravity = Gravity.NO_GRAVITY;
 
 		addView(layout, params);
-
+//Takashi Kojima
 	}
-	
+
 	/**
 	 * Sets the view data from a given overlay item.
-	 * 
-	 * @param item - The overlay item containing the relevant view data 
-	 * (title and snippet). 
+	 *
+	 * @param item - The overlay item containing the relevant view data
+	 * (title and snippet).
 	 */
 	public void setData(Item item) {
-		
+
 		layout.setVisibility(VISIBLE);
 		if (item.getTitle() != null) {
 			//1. ファクトリーにおまかせ
@@ -106,7 +106,7 @@ public class BalloonOverlayView<Item extends OverlayItem> extends FrameLayout {
 			title.setVisibility(VISIBLE);
 			//4. TextViewにセット
 			title.setText(t, TextView.BufferType.SPANNABLE);
-			
+
 			// カラー変更
 			title.setTextColor(Color.BLUE);
 		} else {
@@ -118,7 +118,7 @@ public class BalloonOverlayView<Item extends OverlayItem> extends FrameLayout {
 		} else {
 			snippet.setVisibility(GONE);
 		}
-		
+
 	}
 
 }
