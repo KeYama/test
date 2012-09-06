@@ -29,7 +29,7 @@ import android.widget.TextView;
 
 import com.google.android.maps.OverlayItem;
 
-/**
+/**testkimura
  * A view representing a MapView marker information balloon.
  * <p>
  * This class has a number of Android resource dependencies:
