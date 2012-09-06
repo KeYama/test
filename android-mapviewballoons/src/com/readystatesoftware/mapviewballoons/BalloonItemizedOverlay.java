@@ -49,7 +49,7 @@ public abstract class BalloonItemizedOverlay<Item extends OverlayItem> extends I
 	private Item currentFocussedItem;
 	private int currentFocussedIndex;
 
-	/**
+	/**tetetetetetetet
 	 * Create a new BalloonItemizedOverlay
 	 *
 	 * @param defaultMarker - A bounded Drawable to be drawn on the map for each item in the overlay.
